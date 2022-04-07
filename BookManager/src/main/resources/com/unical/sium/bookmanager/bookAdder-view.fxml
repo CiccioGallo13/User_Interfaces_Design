@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" fx:controller="com.unical.sium.bookmanager.controller.BookAdderController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="300.0" spacing="50.0">
+         <children>
+            <Label prefWidth="50.0" text="ISBN">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="isbnField">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="7.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="300.0" spacing="50.0">
+         <children>
+            <Label prefWidth="50.0" text="Title">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="titleField" />
+         </children>
+         <padding>
+            <Insets top="7.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="300.0" spacing="50.0">
+         <children>
+            <Label prefWidth="50.0" text="Author">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="authorField">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets top="7.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="300.0" spacing="50.0">
+         <children>
+            <Label prefWidth="50.0" text="Publisher">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="publisherField">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets top="7.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="300.0" spacing="50.0">
+         <children>
+            <Label prefWidth="50.0" text="Year">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="yearField" />
+         </children>
+         <padding>
+            <Insets top="7.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#addBook" text="Add Book">
+         <VBox.margin>
+            <Insets left="15.0" top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
