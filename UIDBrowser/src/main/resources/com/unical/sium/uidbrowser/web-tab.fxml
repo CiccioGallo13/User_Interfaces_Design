@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unical.sium.uidbrowser.controller.WebTabController">
+   <children>
+      <TextField fx:id="searchBar" layoutX="14.0" layoutY="13.0" prefHeight="26.0" prefWidth="361.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="13.0" />
+      <Button layoutX="387.0" layoutY="13.0" mnemonicParsing="false" onAction="#search" text="Cerca" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="13.0" />
+      <WebView fx:id="webView" layoutX="114.0" layoutY="90.0" prefHeight="350.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>
