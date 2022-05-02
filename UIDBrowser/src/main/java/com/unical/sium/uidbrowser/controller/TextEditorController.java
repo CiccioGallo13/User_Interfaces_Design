@@ -19,13 +19,13 @@ public class TextEditorController
 
         @FXML
         void about(ActionEvent event) {
-            Dialog<DialogPane> pane = new Dialog<>();
-            DialogPane aboutPane = new DialogPane();
-            aboutPane.setContentText("Developed for User Interfaces Design!");
-            aboutPane.getButtonTypes().add(ButtonType.OK);
-            pane.setTitle("About");
-            pane.setDialogPane(aboutPane);
-            pane.showAndWait();
+                Dialog<DialogPane> pane = new Dialog<>();
+                DialogPane aboutPane = new DialogPane();
+                aboutPane.setContentText("Developed for User Interfaces Design!");
+                aboutPane.getButtonTypes().add(ButtonType.OK);
+                pane.setTitle("About");
+                pane.setDialogPane(aboutPane);
+                pane.showAndWait();
         }
 
         @FXML
@@ -52,7 +52,7 @@ public class TextEditorController
 
         @FXML
         void initialize(){
-
+            TabManager.getInstance().setTabpane(tabPane);
         }
     }
 
